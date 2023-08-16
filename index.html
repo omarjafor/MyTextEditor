@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>My Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="mx-auto bg-sky-400 w-8/12 pb-6">
+        <h2 class="text-5xl font-bold text-center mt-12 mb-4 py-6">My Text Editor</h2>
+        <div class="flex justify-center items-center">
+            <div class="bg-sky-200 border-2 border-solid border-black p-4">
+                <div class="flex justify-between p-3">
+                    <div class="space-x-4">
+                        <button><i class="fa-solid fa-bold" style="color: #050505;"></i></button>
+                        <button><i class="fa-solid fa-italic" style="color: #050505;"></i></button>
+                        <button><i class="fa-solid fa-underline" style="color: #070709;"></i></button>
+                    </div>
+                    <div class="space-x-4">
+                        <button><i class="fa-solid fa-align-left" style="color: #070808;"></i></button>
+                        <button><i class="fa-solid fa-align-center" style="color: #060709;"></i></button>
+                        <button><i class="fa-solid fa-align-right" style="color: #020203;"></i></button>
+                        <button><i class="fa-solid fa-align-justify" style="color: #030408;"></i></button>
+                    </div>
+                    <div class="space-x-2">
+                        <input type="number" name="" id="" class="w-10 border-2 border-solid border-black" min="16"
+                            value="16">
+                        <button><i class="fa-solid fa-font"></i></button>
+                        <input type="color" name="" id="">
+                        <button class="border-black border p-1 font-semibold">Clear All</button>
+                    </div>
+                </div>
+                <div>
+                    <textarea class="border-sky-500 border-solid border-2" name="" id="textarea1" cols="120" rows="15"
+                        placeholder="Write your text here"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
