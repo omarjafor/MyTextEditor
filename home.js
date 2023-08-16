@@ -28,7 +28,11 @@ function f7() {
 }
 
 function f8() {
-    document.getElementById("textarea1").style.fontSize = "fontSize";
+    const fontSize = document.getElementById('fontSize');
+    fontSize.addEventListener('input', function(){
+        document.getElementById("textarea1").style.fontSize = this.value + 'px';
+    })
+    
 }
 
 function f9() {
@@ -36,7 +40,7 @@ function f9() {
 }
 
 function f10() {
-    let color = document.getElementById('myColor');
+    const color = document.getElementById('myColor');
     color.addEventListener('input', function() {
         document.getElementById("textarea1").style.color = this.value;
     });
