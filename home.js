@@ -7,7 +7,7 @@ function f2() {
 }
 
 function f3() {
-    document.getElementById("textarea1").style.fontStyle = "underline";
+    document.getElementById("textarea1").style.textDecoration = "underline";
 }
   
 function f4() {

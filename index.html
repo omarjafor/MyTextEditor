@@ -18,9 +18,10 @@
             <div class="bg-sky-200 border-2 border-solid border-black p-4">
                 <div class="flex justify-between p-3">
                     <div class="space-x-4">
-                        <button><i class="fa-solid fa-bold" style="color: #050505;"></i></button>
-                        <button><i class="fa-solid fa-italic" style="color: #050505;"></i></button>
-                        <button><i class="fa-solid fa-underline" style="color: #070709;"></i></button>
+                        <button type="button" onclick="f1()" data-toggle="tooltip" title="Text Bold"><i
+                                class="fa-solid fa-bold" style="color: #050505;"></i></button>
+                        <button type="button" onclick="f2()" data-toggle="tooltip" title="Text Italic"><i class="fa-solid fa-italic" style="color: #050505;"></i></button>
+                        <button type="button" onclick="f3()" data-toggle="tooltip" title="Text Underline"><i class="fa-solid fa-underline" style="color: #070709;"></i></button>
                     </div>
                     <div class="space-x-4">
                         <button><i class="fa-solid fa-align-left" style="color: #070808;"></i></button>
@@ -37,12 +38,13 @@
                     </div>
                 </div>
                 <div>
-                    <textarea class="border-sky-500 border-solid border-2" name="" id="textarea1" cols="120" rows="15"
+                    <textarea class="border-sky-500 border-solid border-2 p-2" name="" id="textarea1" cols="120" rows="15"
                         placeholder="Write your text here"></textarea>
                 </div>
             </div>
         </div>
     </section>
+    <script src="home.js"></script>
 </body>
 
 </html>
