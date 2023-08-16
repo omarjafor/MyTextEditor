@@ -34,10 +34,12 @@ function f8() {
 function f9() {
     document.getElementById("textarea1").style.textTransform = "uppercase";
 }
- 
+
 function f10() {
-    const color = document.getElementById('myColor').value;
-    document.getElementById("textarea1").style.color = "color";
+    let color = document.getElementById('myColor');
+    color.addEventListener('input', function() {
+        document.getElementById("textarea1").style.color = this.value;
+    });
 }
 
 function f11() {
@@ -45,5 +47,5 @@ function f11() {
     document.getElementById("textarea1").style.textAlign = "left";
     document.getElementById("textarea1").style.fontStyle = "normal";
     document.getElementById("textarea1").style.textTransform = "capitalize";
-    document.getElementById("textarea1").value = " ";
+    document.getElementById("textarea1").value = '';
 }
