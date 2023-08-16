@@ -1,3 +1,4 @@
+
 function f1() {
     document.getElementById("textarea1").style.fontWeight = "bold";
 }
@@ -35,7 +36,8 @@ function f9() {
 }
  
 function f10() {
-    document.getElementById("textarea1").style.color = "capitalize";
+    const color = document.getElementById('myColor').value;
+    document.getElementById("textarea1").style.color = "color";
 }
 
 function f11() {
