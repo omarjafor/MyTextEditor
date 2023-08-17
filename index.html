@@ -12,34 +12,54 @@
 </head>
 
 <body>
-    <section class="mx-auto bg-sky-400 w-8/12 pb-6">
+    <section class="mx-auto bg-sky-400 w-10/12 pb-6">
         <h2 class="text-5xl font-bold text-center mt-12 mb-4 py-6">My Text Editor</h2>
         <div class="flex justify-center items-center">
-            <div class="bg-sky-200 border-2 border-solid border-black p-4">
-                <div class="flex justify-between p-3">
+            <div class="bg-sky-200 border-2 border-solid border-black p-4 w-10/12">
+                <div class="flex justify-between p-3 border-b-2 border-solid border-gray-500">
                     <div class="space-x-4">
                         <button type="button" onclick="f1()" data-toggle="tooltip" title="Text Bold"><i
                                 class="fa-solid fa-bold" style="color: #050505;"></i></button>
-                        <button type="button" onclick="f2()" data-toggle="tooltip" title="Text Italic"><i class="fa-solid fa-italic" style="color: #050505;"></i></button>
-                        <button type="button" onclick="f3()" data-toggle="tooltip" title="Text Underline"><i class="fa-solid fa-underline" style="color: #070709;"></i></button>
+                        <button type="button" onclick="f2()" data-toggle="tooltip" title="Text Italic"><i
+                                class="fa-solid fa-italic" style="color: #050505;"></i></button>
+                        <button type="button" onclick="f3()" data-toggle="tooltip" title="Text Underline"><i
+                                class="fa-solid fa-underline" style="color: #070709;"></i></button>
                     </div>
                     <div class="space-x-4">
-                        <button type="button" onclick="f4()" data-toggle="tooltip" title="Text left"><i class="fa-solid fa-align-left" style="color: #070808;"></i></button>
-                        <button type="button" onclick="f5()" data-toggle="tooltip" title="Text center"><i class="fa-solid fa-align-center" style="color: #060709;"></i></button>
-                        <button type="button" onclick="f6()" data-toggle="tooltip" title="Text right"><i class="fa-solid fa-align-right" style="color: #020203;"></i></button>
-                        <button type="button" onclick="f7()" data-toggle="tooltip" title="Text Justify"><i class="fa-solid fa-align-justify" style="color: #030408;"></i></button>
+                        <button type="button" onclick="f4()" data-toggle="tooltip" title="Text left"><i
+                                class="fa-solid fa-align-left" style="color: #070808;"></i></button>
+                        <button type="button" onclick="f5()" data-toggle="tooltip" title="Text center"><i
+                                class="fa-solid fa-align-center" style="color: #060709;"></i></button>
+                        <button type="button" onclick="f6()" data-toggle="tooltip" title="Text right"><i
+                                class="fa-solid fa-align-right" style="color: #020203;"></i></button>
+                        <button type="button" onclick="f7()" data-toggle="tooltip" title="Text Justify"><i
+                                class="fa-solid fa-align-justify" style="color: #030408;"></i></button>
                     </div>
                     <div class="space-x-2">
-                        <input type="number" name="" id="fontSize" onchange="f8()" class="w-10 border-2 border-solid border-black" min="16"
-                            value="16" data-toggle="tooltip" title="Font Size Changer">
-                        <button type="button" onclick="f9()" data-toggle="tooltip" title="Text UpperCase"><i class="fa-solid fa-font"></i></button>
-                        <input type="color" name="" id="myColor" onchange="f10()" data-toggle="tooltip" title="Text Color Changer">
-                        <button class="border-black border p-1 font-semibold" type="button" onclick="f11()" data-toggle="tooltip" title="Clear All Text">Clear All</button>
+                        <input type="number" name="" id="fontSize" onchange="f8()"
+                            class="w-10 border-2 border-solid border-black" min="16" value="16" data-toggle="tooltip"
+                            title="Font Size Changer">
+                        <button type="button" onclick="f9()" data-toggle="tooltip" title="Text UpperCase"><i
+                                class="fa-solid fa-font"></i></button>
+                        <input type="color" name="" id="myColor" onchange="f10()" data-toggle="tooltip"
+                            title="Text Color Changer">
+                        <button class="border-black border p-1 font-semibold" type="button" onclick="f11()"
+                            data-toggle="tooltip" title="Clear All Text">Clear All</button>
                     </div>
                 </div>
                 <div>
-                    <textarea class="border-sky-500 border-solid border-2 p-2" name="" id="textarea1" cols="120" rows="15"
-                        placeholder="Write your text here"></textarea>
+                    <!-- <div>
+                        <textarea class="border-sky-500 border-solid border-2 p-2" name="" id="textarea1" cols="120"
+                        rows="15" placeholder="Write your text here"></textarea>
+                    </div> -->
+
+                    <div>
+                        <label for="textarea1" class="block mb-2 text-sm font-medium text-gray-900 pt-2">Your
+                            message :</label>
+                        <textarea id="textarea1" rows="12" cols="100"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Write your thoughts here..."></textarea>
+                    </div>
                 </div>
             </div>
         </div>
